@@ -1,0 +1,55 @@
+.tabulka_pro_hosty{
+    font-family: 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 30%;    
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.tabulka_pro_hosty th{
+    border: 0;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.tabulka_pro_hosty td{
+    border: 0;
+    text-align: center;
+    padding: 2px;
+}
+
+.tabulka_pro_kontrolu{
+    font-family: 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 80%;    
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.tabulka_pro_kontrolu th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+}
+
+.tabulka_pro_kontrolu td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+}
