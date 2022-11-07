@@ -124,7 +124,7 @@ function vypis_kontrolni_tabulky()
     text = "<table class=\"tabulka_pro_kontrolu\"> <tr> <th style=\"width: 10%;\">Jméno sítě</th> <th style=\"width: 12%;\">Potřebná velikost</th> <th style=\"width: 12%;\">Reálná velikost</th> <th style=\"width: 12%;\">Adresa</th> <th style=\"width: 5%;\">Prefix</th> <th style=\"width: 12%;\">Maska</th> <th style=\"width: 12%;\">Rozsah od</th> <th style=\"width: 12%;\">Rozsah do</th> <th style=\"width: 12%;\">Broadcast</th> </tr>";
     for (let i = 0; i < pocet_hostu; i++)
     {
-        text += "<td id=\"ta" + i + "\"><input class = \"kontrolni_tabulka\" type=\"text\" id=\"jmeno"+i+"\" maxlength=\"1\" name=\"jmeno"+i+"\" style=\"text-transform:uppercase\"></td>";
+        text += "<td id=\"ta" + i + "\"><input class = \"kontrolni_tabulka\" type=\"text\" id=\"jmeno"+i+"\" maxlength=\"1\" name=\"jmeno"+i+"\"></td>";
         text += "<td id=\"tb" + i + "\"><input class = \"kontrolni_tabulka\" type=\"text\" id=\"pot_velikost"+i+"\" maxlength=\"5\" name=\"pot_velikost" + i +"\" value=\"\"></td>";
         text += "<td id=\"tc" + i + "\"><input class = \"kontrolni_tabulka\" type=\"text\" id=\"real_velikost"+i+"\" maxlength=\"5\" name=\"real_velikost" + i +"\" value=\"\"></td>";
         text += "<td id=\"td" + i + "\"><input class = \"kontrolni_tabulka\" type=\"text\" id=\"sit_adresa"+i+"\" maxlength=\"16\" name=\"sit_adresa" + i +"\" value=\"\"></td>";
