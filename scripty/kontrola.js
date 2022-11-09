@@ -1,4 +1,5 @@
-function hlavni_kontrola(el){
+function hlavni_kontrola(el)
+{
     if(el.value != ""){
       if(parseInt(el.value) < parseInt(el.min)){
         el.value = el.min;
@@ -10,7 +11,8 @@ function hlavni_kontrola(el){
   }
 
 
-function kontrola_prefixu(){
+function kontrola_prefixu()
+{
     if(prefix != zjisti_prefix_nebo_hodnoty(zjisti_soucet(),false))
     {
         prefix =  zjisti_prefix_nebo_hodnoty(zjisti_soucet(),false);
@@ -27,5 +29,27 @@ function kontrola_prefixu(){
         }
       }
     }
+}
 
+
+function kontrola_prazdneho_pole(hodnota, pravda=true)
+{
+  if(hodnota.value == "")
+  {
+    if(pravda)
+    {
+      if(hodnota.id.includes("ro"))
+      {
+        hodnota.value = hodnota.min;
+      }
+      else if(hodnota.id.includes("rd"))
+      {
+        hodnota.value = hodnota.max;
+      }
+    }
+    else
+    {
+      hodnota.value = hodnota.min;
+    }
+  }
 }

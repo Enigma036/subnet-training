@@ -155,7 +155,7 @@ function kontrola_tabulky_s_vysledky()
     pocet_hostu = zjisti_hosty();
     for (let i = 0; i < pocet_hostu; i++)
     {
-        if(document.getElementById("jmeno" + i).value == jmena_sitova[i])
+        if(document.getElementById("jmeno" + i).value.toUpperCase() == jmena_sitova[i])
         {
             document.getElementById("ta" + i).style.backgroundColor = "#A3FF8D";
         }

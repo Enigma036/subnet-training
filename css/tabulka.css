@@ -30,9 +30,9 @@
 .tabulka_pro_kontrolu{
     font-family: 'Trebuchet MS', sans-serif;
     border-collapse: collapse;
-    width: 80%;    
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 90%;    
+    margin-left: 3%;
+    margin-right: 3%;
     margin-top: 1%;
 }
 
@@ -46,6 +46,24 @@
 }
 
 .tabulka_pro_kontrolu td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.tabulka_pro_magic_osu{
+    font-family: 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 70%;    
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.tabulka_pro_magic_osu td{
     border: 1px solid black;
     text-align: center;
     padding: 5px;
