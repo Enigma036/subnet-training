@@ -71,3 +71,75 @@
     background-color: rgb(255, 255, 255);
     font-size: 15px;
 }
+
+@media screen and (max-width: 1600px) {
+    .tabulka_pro_hosty{
+        font-size: 15px;
+    }
+    .tabulka_pro_kontrolu{
+        font-size: 10px;
+    }
+    .tabulka_pro_magic_osu{
+        font-size: 10px;
+    }
+
+    .tabulka_pro_kontrolu th{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tabulka_pro_hosty{
+        font-size: 10px;
+    }
+    .tabulka_pro_kontrolu{
+        font-size: 5px;
+    }
+    .tabulka_pro_magic_osu{
+        font-size: 5px;
+    }
+
+    .tabulka_pro_magic_osu td{
+        font-size: 8px;
+    }
+
+
+    .tabulka_pro_kontrolu th{
+        font-size: 8px;
+    }
+
+    .tabulka_pro_kontrolu td{
+        padding: 0px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tabulka_pro_hosty{
+        font-size: 10px;
+    }
+    .tabulka_pro_kontrolu{
+        font-size: 5px;
+    }
+    .tabulka_pro_magic_osu{
+        font-size: 5px;
+    }
+
+    .tabulka_pro_magic_osu td{
+        font-size: 8px;
+    }
+
+
+    .tabulka_pro_kontrolu th{
+        font-size: 5px;
+    }
+
+    .tabulka_pro_kontrolu td{
+        padding: 0px;
+        font-size: 10px;
+    }
+}
+
+
+
+

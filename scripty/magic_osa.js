@@ -10,12 +10,12 @@ function ukaz_magic_osu()
     {
         stisknuto = false
         document.getElementById("tabulka_magic_osa").innerHTML = ""
-        document.getElementById("tlacitko_magic_osa").textContent = "Zobrazit Magic osu"
+        document.getElementById("tlacitko_magic_osa").textContent = "Show magic axis"
     }
     else
     {
-        text = "<h2 class =\"magic_osa_nadpis\">Magic Osa</h2>";
-        text += "<p class =\"magic_osa_pocet_clenu\">Počet reálných hostů: X-2</p>";
+        text = "<h2 class =\"magic_osa_nadpis\">Magic axis</h2>";
+        text += "<p class =\"magic_osa_pocet_clenu\">Number of real hosts: X-2</p>";
         text += "<div class=\"row\"><table class=\"tabulka_pro_magic_osu\">"
         stisknuto = true;
         text += "<tr>"
@@ -38,7 +38,7 @@ function ukaz_magic_osu()
         text += "</tr></table>";
         text += "</div>"
         document.getElementById("tabulka_magic_osa").innerHTML = text
-        document.getElementById("tlacitko_magic_osa").textContent = "Skrýt Magic osu"
+        document.getElementById("tlacitko_magic_osa").textContent = "Hide magic axis"
     }
 
 }

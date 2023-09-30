@@ -16,7 +16,7 @@ function vypsani_hostu()
     pocet_hostu = zjisti_hosty();
     if(pocet_hostu <= 5)
     {
-        text = "<div class=\"column\"><table class=\"tabulka_pro_hosty\"><tr><th>Jméno</th><th>Počet</th><th>rozsah</th><th>od</th><th>do</th></tr>";
+        text = "<div class=\"column\"><table class=\"tabulka_pro_hosty\"><tr><th>Name</th><th>Hosts</th><th>Range</th><th>from</th><th>to</th></tr>";
         for (let i = 0; i < pocet_hostu; i++)
         {
             text +="<tr><td>"+abeceda[i]+"</td>" + "<td>"+hodnoty_hostu[i]+"</td>" + "<td>......</td>";
@@ -28,7 +28,7 @@ function vypsani_hostu()
     }
     else
     {   
-        text = "<div class=\"column\"><table class=\"tabulka_pro_hosty\"><tr><th>Jméno</th><th>Počet</th><th>rozsah</th><th>od</th><th>do</th></tr>";
+        text = "<div class=\"column\"><table class=\"tabulka_pro_hosty\"><tr><th>Name</th><th>Number</th><th>Range</th><th>from</th><th>to</th></tr>";
         if(pocet_hostu == 10){
             pomocna = 5;
         }
@@ -46,7 +46,7 @@ function vypsani_hostu()
         }
         text += "</table></div>";
 
-        text += "<div class=\"column\"><table class=\"tabulka_pro_hosty\"><tr><th>Jméno</th><th>Počet</th><th>rozsah</th><th>od</th><th>do</th></tr>";
+        text += "<div class=\"column\"><table class=\"tabulka_pro_hosty\"><tr><th>Name</th><th>Počet</th><th>rozsah</th><th>od</th><th>do</th></tr>";
         for (let i = 5; i < pocet_hostu; i++)
         {
             text +="<tr><td>"+abeceda[i]+"</td>" + "<td>"+hodnoty_hostu[i]+"</td>" + "<td>......</td>";
@@ -121,7 +121,7 @@ function nova_ip()
 function vypis_kontrolni_tabulky()
 {
     pocet_hostu = zjisti_hosty();
-    text = "<table class=\"tabulka_pro_kontrolu\"> <tr> <th style=\"width: 10%;\">Jméno sítě</th> <th style=\"width: 12%;\">Potřebná velikost</th> <th style=\"width: 12%;\">Reálná velikost</th> <th style=\"width: 12%;\">Adresa</th> <th style=\"width: 5%;\">Prefix</th> <th style=\"width: 12%;\">Maska</th> <th style=\"width: 12%;\">Rozsah od</th> <th style=\"width: 12%;\">Rozsah do</th> <th style=\"width: 12%;\">Broadcast</th> </tr>";
+    text = "<table class=\"tabulka_pro_kontrolu\"> <tr> <th style=\"width: 10%;\">Network name</th> <th style=\"width: 12%;\">Required size (hosts)</th> <th style=\"width: 12%;\">Real size (hosts)</th> <th style=\"width: 12%;\">Address</th> <th style=\"width: 5%;\">Prefix</th> <th style=\"width: 12%;\">Subnet mask</th> <th style=\"width: 12%;\">Range from</th> <th style=\"width: 12%;\">Range to</th> <th style=\"width: 12%;\">Broadcast</th> </tr>";
     for (let i = 0; i < pocet_hostu; i++)
     {
         text += "<td id=\"ta" + i + "\"><input class = \"kontrolni_tabulka\" type=\"text\" id=\"jmeno"+i+"\" maxlength=\"1\" name=\"jmeno"+i+"\" style=\"text-transform: uppercase\"></td>";

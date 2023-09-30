@@ -48,6 +48,37 @@
     text-align: center;
 }
 
+@media screen and (max-width: 1600px) {
+    .hlavni_nadpis{
+        font-size: 25px;
+    }
+    .hlavni_ip{
+        font-size: 35px;
+    }
+    .nadpis_pro_vyber_hostu{
+        font-size: 15px;
+    }
+    .zaverecny_text{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hlavni_nadpis{
+        font-size: 15px;
+    }
+    .hlavni_ip{
+        font-size: 35px;
+    }
+    .nadpis_pro_vyber_hostu{
+        font-size: 15px;
+    }
+    .zaverecny_text{
+        font-size: 15px;
+    }
+}
+
+
 
 
 

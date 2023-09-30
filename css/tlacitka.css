@@ -63,3 +63,56 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1600px) {
+  .button {
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 2%;
+  }
+  .pocet_hostu_css{
+    padding: 3px;
+    font-size: 14px;
+    margin-top: 2%;
+  }
+  .hoste_rozsah_css{
+    padding: 3px;
+    font-size: 14px;
+    margin-top: 2%;
+  }
+  .kontrolni_tabulka{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .button {
+    padding: 8px;
+    font-size: 12px;
+    margin-top: 2%;
+  }
+  .pocet_hostu_css{
+    padding: 3px;
+    font-size: 12px;
+    margin-top: 2%;
+  }
+  .hoste_rozsah_css{
+    padding: 1px;
+    font-size: 10px;
+    margin-top: 2%;
+    width: auto;
+  }
+  .kontrolni_tabulka{
+    padding: 1px;
+    font-size: 10px;
+    margin: 5px 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .kontrolni_tabulka{
+    padding: 1px;
+    font-size: 6px;
+    margin: 5px 0px;
+  }
+}
